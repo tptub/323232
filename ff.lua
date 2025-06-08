@@ -267,3 +267,11 @@ end)
 MakeButton("🥵 انيق وجهك", 335, function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/tptub/-/refs/heads/main/bang-face.lua"))()
 end)
+MakeButton("🛠️ جاري الإصلاح", 440, function()
+	playClickSound()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "إصلاح",
+		Text = "جاري تنفيذ الإصلاحات...",
+		Duration = 3
+	})
+end)
